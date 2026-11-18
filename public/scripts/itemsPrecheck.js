@@ -30,9 +30,9 @@ fetch("https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-sto
 // Part 3: Create a function and place code inside. Add event listener to form to trigger function.
 // Display the names of all the products on your HTML page using JavaScript. 
 let itemForm = document.getElementById("itemForm")
-itemForm.addEventListener("submit", getItems)
+itemForm.addEventListener("submit", getItemsPart4)
 
-function getItems(e) {
+function getItemsPart3(e) {
     e.preventDefault()
 
     fetch("https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json")
@@ -62,7 +62,7 @@ function getItems(e) {
     item names that contain what is written in search bar.
     Append error message to form instead of simply printing to console.
 */
-function getItems(e) {
+function getItemsPart4(e) {
     e.preventDefault()
 
     fetch("https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json")
